@@ -5,14 +5,16 @@ import CustomCard from "./CustomCard/index.jsx";
 import CustomNavbar from './CustomNavbar/index.jsx';
 import Jumbotron from "./Jumbotron/index.jsx";
 
+const description = "Lorem ipsum odor amet, consectetuer adipiscing elit. Sit malesuada vestibulum mollis sem faucibus tempor tortor aliquet? Venenatis ac nisl etiam ultricies natoque pharetra ipsum lorem. Elit facilisi elementum enim pharetra eros. Pulvinar dignissim pretium torquent urna erat curabitur diam metus. Ornare magnis eros aliquet ad congue dictumst tortor elementum sodales."
+
 const cards = [
 	{
 		imgContainer:{
 			url:"https://acnews.blob.core.windows.net/imgnews/medium/NAZ_c8d202cc16cf4b079ffd88860a0c0866.jpg",
-			alt:"Primer viaje"
+			alt:""
 		},
 		title: "Viaje 1",
-		description: "Descripción viaje 1",
+		description: description,
 		buttonContainer:{
 			url:"www.google.com",
 		}
@@ -23,7 +25,7 @@ const cards = [
 			alt:"Segundo viaje"
 		},
 		title: "Viaje 2",
-		description: "Descripción viaje 2",
+		description: description,
 		buttonContainer:{
 			url:"www.google.com",
 		}
@@ -34,7 +36,7 @@ const cards = [
 			alt:"Tercer viaje"
 		},
 		title: "Viaje 3",
-		description: "Descripción viaje 3",
+		description: description,
 		buttonContainer:{
 			url:"www.google.com",
 		}
@@ -45,7 +47,7 @@ const cards = [
 			alt:"Cuarto viaje"
 		},
 		title: "Viaje 4",
-		description: "Descripción viaje 4",
+		description: description,
 		buttonContainer:{
 			url:"www.google.com",
 		}
@@ -56,7 +58,7 @@ const cards = [
 			alt:"Quinto viaje"
 		},
 		title: "Viaje 5",
-		description: "Descripción viaje 5",
+		description: description,
 		buttonContainer:{
 			url:"www.google.com",
 		}
@@ -67,7 +69,7 @@ const cards = [
 			alt:"Sexto viaje"
 		},
 		title: "Viaje 6",
-		description: "Descripción viaje 6",
+		description: description,
 		buttonContainer:{
 			url:"www.google.com",
 		}
@@ -78,7 +80,7 @@ const Home = () => {
 	var currentTime = new Date();
 	var year = currentTime.getFullYear()
 	return (
-		<div className="text-center">
+		<div>
 			<CustomNavbar />
 			<div className="container-md p-2">
 				<Jumbotron />

@@ -11,6 +11,14 @@
     object-fit: cover;
 }
 
+.card-title{
+    text-align: center;
+}
+
+.card-text{
+    text-align: justify;
+}
+
 .footer{
     height: 70px;
 }
