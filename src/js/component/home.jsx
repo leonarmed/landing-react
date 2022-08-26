@@ -85,8 +85,8 @@ const Home = () => {
 			<div className="container-md p-2">
 				<Jumbotron />
 				<div className="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4 m-auto">
-					{cards.map(card => {
-						return <CustomCard imgContainer={card.imgContainer} title={card.title} description={card.description} buttonContainer={card.buttonContainer}/>
+					{cards.map((card, i) => {
+						return <CustomCard key={i} imgContainer={card.imgContainer} title={card.title} description={card.description} buttonContainer={card.buttonContainer}/>
 					})}
 				</div>
 			</div>
